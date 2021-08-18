@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+</head>
+<body onload="init()">
+    <div class="flex-container">
+        <div id="balance-box">
+            <header>Rico Zacharias</header>
+            <label for="balance-value">Balance:</label>
+            <span id="balance-value">0</span>
+            <br/>
+            <div id="loan-value-box">
+                <label for="loan-value">Outstanding loan:</label>
+                <span id="loan-value">0</span>
+            </div>
+            <br/>
+            <button id="button-loan">Get a loan</button>
+        </div>
+        <div id="work-box">
+            <header>Work</header>
+            <label>Pay:</label>
+            <span id="pay-value">0</span>
+            <br /><br />
+            <button id="button-bank">Bank</button>
+            <button id="button-work">Work</button>
+            <button id="button-repayLoan">Repay Loan</button>
+        </div>
+        <div id="computer-box">
+            <header>Laptop</header>
+            <select id="computer-list"></select>
+            <br /><br />
+            <label>Features:</label>
+            <br />
+            <div id="computer-features"></div>
+        </div>
+    </div>
+    <div class="flex-container" style="padding: 0">
+        <div id="computer-details-box">
+            <div class="flex-container">
+                <div>
+                    <img src="" id="computer-image">               
+                </div>
+                <div>
+                    <header id="computer-title"></header>
+                    <br/>
+                    <div id="computer-description"></div>
+                </div>
+                <div>
+                    <div id="computer-price"></div>
+                    <br/>
+                    <button id="button-buy">BUY NOW</button>       
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div id="bought-computers-box">
+            <header>Bought computers</header>
+            <ul id="bought-computers-list">
+            </ul>
+            <span id="bought-computers-info">shows a list of all bought computers</span>
+        </div>
+    </div>
+</body>
+</html>
